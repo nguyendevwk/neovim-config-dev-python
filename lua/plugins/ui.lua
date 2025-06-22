@@ -109,7 +109,6 @@ return {
     config = function()
       local alpha = require("alpha")
       local dashboard = require("alpha.themes.dashboard")
-      
       dashboard.section.header.val = {
         "                                                     ",
         "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
@@ -120,7 +119,6 @@ return {
         "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
         "                                                     ",
       }
-      
       dashboard.section.buttons.val = {
         dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
         dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
@@ -130,7 +128,6 @@ return {
         dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
         dashboard.button("q", "  Quit", ":qa<CR>"),
       }
-      
       alpha.setup(dashboard.opts)
     end,
   },
@@ -159,7 +156,6 @@ return {
           align = "left",
         },
       })
-      
       -- Register key groups
       require("which-key").register({
         ["<leader>f"] = { name = "Find" },

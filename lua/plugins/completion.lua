@@ -111,7 +111,6 @@ return {
           end,
         },
         sources = cmp.config.sources({
-          { name = "copilot", priority = 1000 },
           { name = "nvim_lsp", priority = 900 },
           { name = "luasnip", priority = 800 },
         }, {
